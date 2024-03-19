@@ -42,6 +42,8 @@
             btn_Xoa = new Button();
             btn_sua = new Button();
             btn_Dangxuat = new Button();
+            textBox1 = new TextBox();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -49,10 +51,10 @@
             // 
             dataGridView1.BackgroundColor = SystemColors.ButtonHighlight;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(11, 36);
+            dataGridView1.Location = new Point(11, 65);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(515, 402);
+            dataGridView1.Size = new Size(515, 373);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellClick += dataGridView1_CellClick;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
@@ -171,11 +173,30 @@
             btn_Dangxuat.UseVisualStyleBackColor = true;
             btn_Dangxuat.Click += btn_Dangxuat_Click;
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(12, 37);
+            textBox1.Name = "textBox1";
+            textBox1.PlaceholderText = "Nhập tên hoặc mã người dùng";
+            textBox1.Size = new Size(423, 23);
+            textBox1.TabIndex = 16;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(441, 37);
+            button1.Name = "button1";
+            button1.Size = new Size(85, 23);
+            button1.TabIndex = 17;
+            button1.Text = "Tìm kiếm";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // User
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(793, 450);
+            Controls.Add(button1);
+            Controls.Add(textBox1);
             Controls.Add(btn_Dangxuat);
             Controls.Add(btn_sua);
             Controls.Add(btn_Xoa);
@@ -214,5 +235,7 @@
         private Button btn_Xoa;
         private Button btn_sua;
         private Button btn_Dangxuat;
+        private TextBox textBox1;
+        private Button button1;
     }
 }
